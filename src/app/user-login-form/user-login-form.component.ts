@@ -21,6 +21,11 @@ export class UserLoginFormComponent implements OnInit {
     // this.loginForm = 
   }
 
+  test() : void {
+    console.log('here');
+    this.security.test()
+  }
+
   onSubmit(form: any): void {
     this.security.login(form.username, form.password)
     // console.log('u su ', form )
